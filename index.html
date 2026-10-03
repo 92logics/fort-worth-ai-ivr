@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>92 Logics prototype · Fort Worth AI IVR sample</title>
+  <meta name="description" content="Scripted phone-assistant sample by 92 Logics for City of Fort Worth RFP 26-0263. Not an official city system and not a bid. Does not place calls.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#thread">Skip to the phone assistant</a>
+  <div class="banner" role="note">
+    <strong>92 Logics prototype.</strong>
+    Scripted phone-assistant sample. Not an official City of Fort Worth system, not connected to city phones or accounts, and not a bid. This page does not place calls.
+  </div>
+
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">92</span>
+      <div>
+        <p class="eyebrow">92 Logics · Islamabad · scripted demo</p>
+        <h1>Fort Worth AI IVR sample</h1>
+      </div>
+    </div>
+    <p class="lede">A labeled sample of a resident-facing voice-style assistant for solicitation <strong>26-0263</strong> (AI-based Interactive Voice Response). Answers are scripted from public City of Fort Worth web pages and from public summaries of the RFP. Topics those sources do not cover are refused. Nothing dials a number.</p>
+  </header>
+
+  <div class="shell">
+    <aside class="rail" aria-label="Scripted prompts">
+      <div class="phone-status" role="status">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <strong>Simulated line</strong>
+          <p>No call is placed. Matching runs in this browser.</p>
+        </div>
+      </div>
+      <p class="rail-label">Try a scripted prompt</p>
+      <div class="chips" id="chips"></div>
+      <p class="fine">Offline. No API key. No live IVR, Cisco, Accela, or account lookup.</p>
+    </aside>
+
+    <main id="main">
+      <section aria-label="Scripted phone assistant">
+        <div class="handset" aria-hidden="true">
+          <div class="handset-bar">
+            <span>AI IVR sample</span>
+            <span class="pill">not placing a call</span>
+          </div>
+        </div>
+        <div class="thread" id="thread" aria-live="polite"></div>
+        <form id="composer" class="composer">
+          <label class="sr" for="ask">Ask the prototype</label>
+          <textarea id="ask" rows="2" placeholder="Ask about 311 hours, trash contacts, water emergencies, or the RFP scope — or try something it should refuse."></textarea>
+          <button type="submit">Answer from public pages</button>
+        </form>
+        <p class="fine composer-note">Scripted replies only. This form never dials, texts, or emails anyone.</p>
+      </section>
+    </main>
+
+    <aside class="facts" aria-label="Verified solicitation facts">
+      <h2>From verified sources</h2>
+      <p>CRM lead id 11 and public pages. Bonfire portal details behind login were not readable in this build.</p>
+      <dl>
+        <div><dt>Buyer</dt><dd>City of Fort Worth, Texas</dd></div>
+        <div><dt>Solicitation</dt><dd>26-0263 · AI-based Interactive Voice Response Solution</dd></div>
+        <div><dt>Notice / portal</dt><dd><a href="https://fortworthtexas.bonfirehub.com/portal/?tab=openOpportunities">fortworthtexas.bonfirehub.com</a></dd></div>
+        <div><dt>CRM deadline</dt><dd>2026-10-22 (portal listing not reconfirmed here)</dd></div>
+        <div><dt>City contact email in CRM</dt><dd>None recorded</dd></div>
+        <div><dt>Actual scope (public summaries)</dt><dd>As-needed enterprise AI platform to modernize IVR and unify resident- and staff-facing voice, web chat, agent chat, SMS, outbound calling, and related workflow / knowledge services; named integrations include Cisco IVR, Microsoft 365, Accela, and ESRI/ArcGIS; U.S. hosting and SOC 2 Type II called out in aggregator text.</dd></div>
+        <div><dt>Public city hall line</dt><dd>100 Fort Worth Trail, Fort Worth, TX 76102 · 817-392-1234</dd></div>
+      </dl>
+      <p class="fine">Aggregator pages disagree on an earlier September due date. This demo does not invent call volumes or city statistics.</p>
+    </aside>
+  </div>
+
+  <footer class="foot">
+    Prototype by 92 Logics · cowork@92logics.com · not an official city system.
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
